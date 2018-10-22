@@ -1,20 +1,20 @@
 # Fluent::Plugin::Azureeventhubs
 
-Azure Event Hubs buffered output plugin for Fluentd.
+Azure Event Hubs buffered output plugin for Fluentd.  
+
+This version allows batching of events, so that you're not sending everything individually.  The original plugin has been busy and hasn't been able to merge these change, and my team needs this now, so this is available just for that.  There is no guarantee of this being maintained.
 
 ## Installation
 
-Add this line to your application's Gemfile:
+Clone this repo:
 
-```ruby
-gem 'fluent-plugin-azureeventhubs'
-```
+    $ git clone https://github.com/hatfarm/fluent-plugin-azureeventhubs.git
 
 And then execute:
 
-    $ bundle
+    $ gem build fluent-plugin-azureeventhubs.gemspec
 
-Or install it yourself as:
+Then install it yourself as:
 
     $ gem install fluent-plugin-azureeventhubs
 
